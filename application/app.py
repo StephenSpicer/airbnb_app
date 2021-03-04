@@ -22,7 +22,7 @@ def create_app():
     of interractive web application.
     """
     app = Flask(__name__)
-    load_model = load('./finalized_model.sav')
+    load_model = load('application/finalized_model.sav')
     
     # as easy as changing path to /form and make a link to it in main page
     @app.route('/')
