@@ -6,10 +6,14 @@ from .predict import get_prediction
 
 # Instantiate Application
 
+def create_app():
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_heroku():
+        return "hello heroku"
+    return app
 
-@app.route('/')
-def hello_heroku():
-    return "hello heroku"
+
 
 
 
