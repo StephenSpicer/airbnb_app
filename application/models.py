@@ -148,7 +148,8 @@ pipeline.fit(X_train, y_train)
 
 # save the model
 filename = 'finalized_model.sav'
-joblib.dump(pipeline, filename, compress=9)
+joblib.dump(pipeline, filename)
+#, compress=9
  
 # verify saved model is workin
 loaded_model = joblib.load(filename)
