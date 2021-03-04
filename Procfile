@@ -1,2 +1,2 @@
-web gunicorn hello:app --preload
+web gunicorn application:app --preload
 ps:scale web=1
