@@ -16,6 +16,7 @@ matplotlib = "*"
 requests = "*"
 ipykernel = "*"
 seaborn = "*"
+joblib = "*"
 
 [dev-packages]
 
