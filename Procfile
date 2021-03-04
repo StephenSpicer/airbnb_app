@@ -1,1 +1,1 @@
-web: gunicorn application:app -t 360
+web:gunicorn application:app -t 360
