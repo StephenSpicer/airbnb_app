@@ -18,8 +18,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 # IMPORT FILES
-train = pd.read_csv("data/train.csv", index_col='id')
-test = pd.read_csv("data/test.csv", index_col='id')
+train = pd.read_csv('C:/Users/slups/Desktop/Airbnb/airbnb_app/data/train.csv', index_col='id')
+test = pd.read_csv('C:/Users/slups/Desktop/build_week/BW_Airbnb/airbnb_app/test.csv', index_col='id')
 
 
 def cleaned_dataframe(df):
@@ -148,8 +148,8 @@ pipeline.fit(X_train, y_train)
 
 # save the model
 filename = 'finalized_model.sav'
-joblib.dump(pipeline, filename)
-#, compress=9
+joblib.dump(pipeline, filename, compress=9)
+# 
  
 # verify saved model is workin
 loaded_model = joblib.load(filename)
