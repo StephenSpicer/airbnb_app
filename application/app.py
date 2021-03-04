@@ -3,8 +3,6 @@ import pandas as pd
 from flask import Flask, render_template, request
 from joblib import load
 from .predict import get_prediction
-import os
-
 
 # Instantiate Application
 
